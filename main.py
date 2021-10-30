@@ -3,7 +3,7 @@ import sys
 
 
 if len(sys.argv)==2:
-    user_name = sys.argv[1]
+    user_name = str(sys.argv[1])
 else:
     print("Fail...\nFirst argument with your username needed.")
     sys.exit(-1)
