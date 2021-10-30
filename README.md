@@ -42,3 +42,8 @@ To run this project, you will need to add the following environment variables to
 
 `TWITTER_ACCESS_SECRET_TOKEN`
 
+## Roadmap
+
+- Delete lists
+
+- Massive unfollow
