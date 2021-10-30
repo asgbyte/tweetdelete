@@ -24,7 +24,6 @@ def get_user_id(api, user_name):
 
 
 def remove_tweets(api, user_id):
-    
     time_line = api.user_timeline(user_id =user_id, count=1000, include_rts=True)
 
     total_tweets = len(time_line)
@@ -47,7 +46,7 @@ def remove_likes(api, user_id):
     favorites = api.get_favorites(user_id=user_id, count=3000)
     total_favs = len(favorites)
 
-    r = input("You are going to destroy {} favorites. Are you sure? Y/N:".format(total_favs))
+    r = input("You are going to unlike {} tweets. Are you sure? Y/N:".format(total_favs))
 
     if 'Y' == str(r).upper():
         all_favs_id =  [f.id for f in favorites]
